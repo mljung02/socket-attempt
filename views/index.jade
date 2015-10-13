@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Socket Chat  
+  a(href='/room2') Room 2
+  ul#messages
+    form(action='')
+      input#m(autocomplete='off')
+      button Send
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/app.js")
